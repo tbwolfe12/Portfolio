@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="watch-container">
+      <h1>STOPWATCH</h1>
+      <h2>JS Stopwatch</h2>
+      <p><span id="secs">00</span>:<span id="tens">00</span></p>
+      <button id="start-button">Start</button>
+      <button id="stop-button">Stop</button>
+      <button id="reset-button">Reset</button>
+    </div>
+    <script>
+      window.onload = function () {
+        let secs = 00;
+        let tens = 00;
+        let linkTens = document.getElementById("tens");
+        let linkSecs = document.getElementById("secs");
+        let buttonStart = document.getElementById("start-button");
+        let buttonStop = document.getElementById("stop-button");
+        let buttonReset = document.getElementById("reset-button");
+        let Interval;
+
+        buttonStart.onclick = function() {
+          clearInterval(Interval);
+          Interval = setInterval(startTimer, 10);
+        };
+
+        buttonStop.onclick = function() {
+          clearInterval(Interval);
+        };
+
+        buttonReset.onclick = function() {
+          clearInterval(Interval);
+          tens = "00";
+          secs = "00";
+          linkTens.innerHTML = tens;
+          linkSecs.innerHTML = secs;
+        };
+        function startTimer() {
+          tens++;
+
+          if (tens <= 9) {
+            linkTens.innerHTML = "0" + tens;
+          }
+
+          if (tens > 9) {
+            linkTens.innerHTML = tens; 
+          }
+
+          if (tens > 99) {
+            console.log("seconds");
+            secs++;
+            linkSecs.innerHTML = "0" + secs;
+            tens = 0;
+            linkTens.innerHTML = "0" + 0;
+          }
+          if (secs > 9) {
+            linkSecs.innerHTML = secs;
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

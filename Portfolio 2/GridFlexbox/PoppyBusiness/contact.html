@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/GridFlexbox/PoppyBusiness/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="/GridFlexbox/PoppyBusiness/index.html" class="drop-down">Home</a>
+            <div class="drop-down">
+                    <a href="drop-button">Our Team
+                    <div class="dropdown-content">
+                        <a href="#">Stacey A</a>
+                        <a href="#">John B</a>
+                        <a href="#">Samantha C</a>
+                    </div>
+                </div>
+                <a href="/GridFlexbox/PoppyBusiness/about.html" class="drop-down">About</a>
+            <div class="drop-down">
+                <a href="drop-button">Locations
+                <div class="dropdown-content">
+                    <a href="#">Raleigh</a>
+                    <a href="#">Durham</a>
+                    <a href="#">Apex</a>
+                </div>
+            </div>
+            <a href="/GridFlexbox/PoppyBusiness/contact.html" class="drop-down">Contact Us</a>
+        </div>
+    </header> 
+    <div id="main-container">
+        <div id="info-container">
+            <h1 id="contact-us">Connect with us!</h1>
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Dignissim cras tincidunt lobortis feugiat vivamus at augue. 
+            Eros donec ac odio tempor. Aliquet lectus proin nibh nisl. 
+            Enim facilisis gravida neque convallis a cras semper auctor neque. 
+            Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. 
+            Rutrum tellus pellentesque eu tincidunt tortor. Pulvinar mattis nunc 
+            sed blandit libero volutpat sed cras ornare. Ut morbi tincidunt augue 
+            interdum velit euismod in. Sed odio morbi quis commodo odio aenean.
+
+            Mollis nunc sed id semper risus in hendrerit gravida. 
+            Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. 
+            Consectetur adipiscing elit duis tristique sollicitudin nibh. 
+            Viverra nam libero justo laoreet sit amet cursus. 
+            Non nisi est sit amet facilisis magna etiam tempor orci. 
+            Diam quis enim lobortis scelerisque. 
+            Odio morbi quis commodo odio aenean sed adipiscing. 
+            Quisque egestas diam in arcu cursus euismod quis viverra nibh. 
+            Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. 
+            Turpis cursus in hac habitasse platea dictumst quisque sagittis.
+        </div>
+        <div id="contact-container">
+            <h2>Message Form</h2>
+        <fieldset>
+           <form id="contact" name="contact" action = "/action_page.php" onsubmit= "return valFunction()" method="post">
+           <label for="fname">First Name:</label><br><input type="text" id="fname"><br>
+           <label for="lname">Last Name:</label><br><input type="text" id="lname"><br>
+           <label for="contact-method">How would you prefer to be contacted?</label><select name="contact" id="contact-method" form="contact">
+            <option value="select">Select One</option>
+            <option value="phone">Phone</option>
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+           </select><br>
+           <label for="poppy-checkbox">What color poppies are you looking for? <i>you may select more than one</i></label><br>
+           <label for="red-checkbox" id="checkbox">Red</label><input type="checkbox" id="poppy-checkbox" name="checkbox" value="red">
+           <label for="red-checkbox" id="checkbox">Yellow</label><input type="checkbox" id="poppy-checkbox" name="checkbox" value="yellow">
+           <label for="red-checkbox" id="checkbox">Orange</label><input type="checkbox" id="poppy-checkbox" name="checkbox" value="orange">
+           <label for="red-checkbox" id="checkbox">Soft Pink</label><input type="checkbox" id="poppy-checkbox" name="checkbox" value="soft pink"><br>
+           <input type="submit" value="submit" id="button">
+            </form>
+        </fieldset>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

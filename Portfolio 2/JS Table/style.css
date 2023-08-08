@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+body {
+    background-color: rgb(213, 245, 234);
+}
+#main-container {
+    margin: 0 auto; 
+}
+td {
+    padding: 10px;
+    height: 60%; 
+}
+table {
+    margin: 0 auto; 
+}
+#myInput {
+    width: 35%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black; 
+    outline: none; 
+    background-color: rgb(213, 245, 234)
+}
+#searchbox, h1 {
+text-align: center;
+}
+#tablediv {
+    margin: 0 auto; 
+}
+#searchbox {
+    padding-bottom: 10px;
+}
+.header {
+    background-color: rgb(209, 207, 207);
+    width: 50%;
+}
+tr:hover {
+    background-color: rgb(149, 150, 150);
+}
+tr:hover:nth-child(even) {
+    background-color: rgb(98, 184, 173);
+}
+.header:hover {
+    background-color: rgb(169, 182, 178);
+}
+#clickme {
+    float: right;
+    padding: 5px 15px 5px 15px; 
+    margin: 0px;
+    background-color: rgb(98, 184, 173);
+    color: #FFF;
+    border-radius: 5px; 
+}
+h1 {
+    padding-top: 30px;
+    margin-left: 5%;
+    text-align: center;
+}
+

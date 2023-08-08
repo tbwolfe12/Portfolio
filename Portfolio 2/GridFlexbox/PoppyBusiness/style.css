@@ -1,0 +1,136 @@
+* {
+    background-color: #feffdf;
+    font-family: 'Oxygen', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;              
+}
+body {
+    text-align: center;
+}
+.main-column {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.topnav {
+    display: flex;
+    overflow: hidden;    
+
+}
+.topnav a {
+    display: flex; 
+    text-decoration: none;
+    padding: 10px; 
+    background-color: #ffe79a;
+    width: 100%;
+    color: #ffa952;
+    justify-content: space-around;
+}
+h1 {
+    color: rgb(110, 109, 109);
+    font-size: 4em;
+    background-color: transparent;
+}
+#p1 {
+    margin-top: -5%;
+    font-size: 3em;
+    background-color: transparent;
+    color: rgb(194, 191, 191);
+}
+header {
+    background-color: pink;
+}
+#h1-box {
+    background-image: url(poppies.jpg);
+    background-repeat: no-repeat; 
+}
+#main-box {
+    height:50vh;
+    background-color: #ffa952;
+    display: flex;
+    justify-content:space-around;
+}
+img {
+    margin: 5% 0 5% 0;
+    border-radius: 10%;
+}
+#container {
+    width: 80vw; 
+    min-height: 100%;
+    margin-top: 5%;
+    flex: 1 0 auto;
+    margin: 0 auto;  
+
+}
+#div1, #div2, #div3 {
+    background-color: #ef5a5a;
+    padding: 10px; 
+}
+div p, h2 {
+    background-color: #ef5a5a;
+    color: #FFF;
+} 
+p {
+    color: #FFF;
+    text-align: center;
+    padding: 2%;
+}
+div {
+    background-color: #ef5a5a;
+}
+.drop-down {
+    width: 30vw;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 160px;
+    box-shadow: 0px 5px 10px grey;
+}
+.drop-down:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a  {
+    float: none;
+    color:#ffa952;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 12px 16px;
+}
+footer p {
+    background-color: transparent;
+    display: inline-flex;
+    float: right;
+
+}
+.footerlinks a {
+    text-decoration: none;
+    background-color: transparent;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    #h1-box, #p1 {background-image: url(poppies.jpg)};
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    #h1-box {background-color: #ffa952;
+        }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    #h1-box {background-image: url(poppies.jpg);
+        background-repeat: no-repeat;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    #h1-box {background-image: url(poppies.jpg);
+        background-repeat: no-repeat}
+  }
+

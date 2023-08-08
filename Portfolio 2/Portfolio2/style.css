@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+}
+h1 {
+    margin-top: 100px; 
+}
+img {
+    width: 25%;
+    height: 25%;
+}
+.para {
+    width: 50%; 
+    text-align: center;
+    margin: 0 auto; 
+    padding-bottom: 10px;
+}
+.skills {
+    text-align: center;
+    font-size: 20px;
+}
+.talents {
+    font-size: 20px;
+    font-weight: bolder;
+}
+hr {
+    width: 25vw;
+    text-align: center;
+}
+h1, .img-display-container {
+text-align: center;
+}
+.exp-col, .bottom-container {
+    text-align: center;
+}
+.long-hr {
+    width: 75%;
+    margin: 0 auto;
+}
+#nav {
+    list-style-type: none;
+    background-color: rgb(225, 224, 224);
+    height: 45px;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    float: left; 
+    border-right: 1px solid rgb(198, 197, 197);
+}
+.nav-item a {
+    color: rgb(89, 88, 88);
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.nav-item a:hover:not(.active) {
+    background-color: aliceblue;
+}
+.active {
+    background-color: aquamarine;
+}
+.footer-list {
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+.footer-item {
+    padding-right: 20px; 
+}
+.footer-item a {
+    text-decoration: none;
+    color:rgb(89, 88, 88)
+}
+.img-display-container {
+    padding-top: 20px;
+}
+#downloadbutton {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button {
+    background-color: rgb(251, 252, 252);
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 10px; 
+    color:rgb(89, 88, 88);
+    cursor: pointer;
+}
+.credly {
+    color: rgb(105, 160, 24);
+
+}
+
+

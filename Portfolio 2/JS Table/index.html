@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
+    <title>National Company Directory</title>
+</head>
+<body>
+    <a href="/Portfolio2/index.html"><button id="clickme">Home</button></a>
+    <div id="main-container">
+        <h1>National Company Directory</h1>
+        <div id="searchbox">
+        <input type="text" id="myInput" onkeyup='tableFunction()' placeholder="Search for an employee...">
+    </div>
+    <div id="tablediv">
+        <table id="Table">
+            <tr class="header">
+                <th style="width: 70%">Name</th>
+                <th style="width: 40%">State</th>
+            </tr>
+            <tr>
+                <td>Jim Stevens</td>
+                <td>Nebraska</td>
+            </tr>
+            <tr>
+                <td>Janet Stone</td>
+                <td>California</td>
+            </tr>
+            <tr>
+            <td>Timothy Evans</td>
+            <td>Massachusetts</td>
+            </tr>
+            <tr>
+                <td>Timmy Greene</td>
+                <td>North Carolina</td>
+            </tr>
+            <tr>
+                <td>Evan Smith</td>
+                <td>Georgia</td>
+            </tr>
+            <tr>
+                <td>Eddie Thomas</td>
+                <td>Nebraska</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

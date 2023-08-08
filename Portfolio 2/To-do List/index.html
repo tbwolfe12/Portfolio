@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <title>To Do List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+        <a href="/Portfolio2/index.html"><button id="clickme">Home</button></a>
+    </nav>
+        <div id="top-container">
+            <h1 id="header">To Do List</h1>
+            <input type="text" id="input" placeholder="Task...">
+            <span onclick="newItem()" class="addbutton">Add Item</span>
+        </div>
+        <ul id="ul-items">
+            <li>Buy groceries</li>
+            <li class="checked">Bathe the dog</li>
+            <li>Clean the counters</li>
+            <li>Work on JavaScript</li>
+        </ul>
+        <script src="script.js"></script>
+    </body>
+</html>
