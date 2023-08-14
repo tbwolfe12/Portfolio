@@ -11,6 +11,9 @@
             background-color: bisque;
             font-family: Tahoma; 
         }
+        h1 {
+            padding-top: 30px;
+        }
         #sticky1 {
             background-color: rgb(82, 232, 182);
             transform: rotate(-5deg); 
@@ -30,10 +33,6 @@
         }
         h2 {
            text-align: center; 
-        }
-        ul li {
-            list-style-type:circle;
-            text-align: left;
         }
         @media only screen and (max-width: 600px) {
                 body{
@@ -60,19 +59,45 @@
             height: 40vh;
             margin: 5%; }
 }
-#clickme {
-    float: right;
-    padding: 5px 15px 5px 15px; 
-    margin: 0px;
-    background-color: rgb(13, 193, 67);
-    color: #FFF;
-    border-radius: 5px;  
+#nav {
+    list-style-type: none;
+    background-color: rgb(225, 224, 224);
+    height: 45px;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    float: left; 
+    border-right: 1px solid rgb(198, 197, 197);
+}
+.nav-item a {
+    color: rgb(89, 88, 88);
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.nav-item a:hover:not(.active) {
+    background-color: aliceblue;
+}
+.active {
+    background-color: aquamarine;
 }
     </style>
 </head>
 <body>
-    <a href="/Portfolio2/index.html"><button id="clickme">Home</button></a>
-        <h1>Sticky Notes</h1>
+    <nav class="navbar">
+        <ul id="nav">
+            <li class="nav-item"><a href="/Portfolio 2/Portfolio2/About/about.html">About Me</a></li>
+            <li class="nav-item"><a href="/Portfolio 2/Portfolio2/MyPortfolio/portfolio.html">My Portfolio</a></li>
+            <li class="nav-item"><a href="/Portfolio 2/Portfolio2/Contact Me/contactme.html">Contact Me</a></li>
+            <li class="nav-item" style="float: right"><a class="active" href ="/Portfolio 2/Portfolio2/index.html">Home</a></li>
+        </ul>
+    </nav>        
+    <h1>Sticky Notes</h1>
         <div id="sticky-container">
             <div id="sticky1">
             <h2>Monday Chores:</h2>
