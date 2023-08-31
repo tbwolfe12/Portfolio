@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(burger.jpg);
+    background-size: cover;
+}
+h1 {
+    color: white;
+    position: relative;
+    left: 40%;
+    top: 200px;
+    font-size: 3em;
+}
+#search-bar {
+    position: relative; 
+    left: 40%;
+    top: 200px;
+}
+#search-bar input[type=text] {
+    width: 25%;
+    margin: 0 auto;
+    height: 40px;
+    background-color: rgb(225, 224, 224);
+    border-radius: 20px;
+    padding: 5px;
+}
+img {
+    display: block;
+    width: 50%;
+}
+.details {
+    position: relative;
+    text-align: center;
+}
+.details h2 {
+    font-size: 30px;
+}
+.details h3 {
+    font-size: 20px;
+}
+#show-recipe {
+    position: absolute;
+    background-color: aqua;
+    min-height: 100%;
+    width: 75%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+#recipe pre {
+    white-space: pre-wrap;
+  word-wrap: break-word;
+}
+#hide-recipe {
+    position: relative;
+    width: 1.8em;
+    height: 1.8em;
+    background-color: aquamarine;
+    border: none;
+    top: 1.2em;
+    left: 90%;
+}
+.ul-items {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+@media screen and (max-width: 500px) {
+    #main-container {
+      font-size: 14px;
+    }
+}
+#nav {
+    list-style-type: none;
+    background-color: rgb(225, 224, 224);
+    height: 45px;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    float: left; 
+    border-right: 1px solid rgb(198, 197, 197);
+}
+.nav-item a {
+    color: rgb(89, 88, 88);
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.nav-item a:hover:not(.active) {
+    background-color: aliceblue;
+}
+.active {
+    background-color: rgb(255, 212, 127);
+}

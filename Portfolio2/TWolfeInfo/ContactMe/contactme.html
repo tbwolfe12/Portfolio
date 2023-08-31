@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul id="nav">
+            <li class="nav-item"><a href="/Portfolio2/TWolfeInfo/About/about.html">About Me</a></li>
+            <li class="nav-item"><a href="/Portfolio2/TWolfeInfo/MyWork/portfolio.html">My Work</a></li>
+            <li class="nav-item"><a href="/Portfolio2/TWolfeInfo/ContactMe/contactme.html">Contact Me</a></li>
+            <li class="nav-item" style="float: right"><a class="active" href ="/index-1.html">Home</a></li>
+        </ul>
+    </nav> 
+    <div id="large-container">
+        <div id="small-container">
+            <h1>Let's Connect!</h1>
+            <form action="action_page.php" method="post">
+            <label for="fname">First Name </label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+            <label for="lname">Last Name </label><input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+            <label for="contact">How do you want to be contacted?</label>
+            <select id="contact" name="contactinfo">
+                <option value="select">Select one</option>
+                <option value="phone">phone</option>
+                <option value="mail">mail</option>
+                <option value="text">text message</option>
+            </select><br>
+            <input type="submit" value="submit">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
