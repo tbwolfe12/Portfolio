@@ -92,10 +92,6 @@ input[type=submit] {
         display: block;
         margin: 0 auto;
     }
-    .nav-item {
-        float: left;
-        font-size: x-small;
-    }
 }
 @media screen and (max-width: 900px) and (min-width: 1200px) {
     #small-container {

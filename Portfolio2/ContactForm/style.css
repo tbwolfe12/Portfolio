@@ -85,3 +85,29 @@ textarea {
 .active {
     background-color: aquamarine;
 }
+@media (max-width: 800px) {
+    #l-container, #square-container {
+      float: none;
+      width: 100%;
+    }
+  }
+  @media (max-width: 800px) { 
+    #square-container {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px; 
+    }
+    #button {
+        margin-bottom: 10px;
+        height: 40px;
+        width: 70px;  
+    }
+    h1 {
+        padding-top: 10%;
+    }
+    .nav-item {
+        float: left;
+        font-size: x-small;
+    }
+  }
