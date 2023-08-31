@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <title>Sticky Notes</title>
     <style>
         body {
             text-align: center;
-            background-color: bisque;
-            font-family: Tahoma; 
+            background-color: rgb(187, 134, 69);
         }
         h1 {
             padding-top: 30px;
+            font-family: 'Gochi Hand', cursive; 
         }
         #sticky1 {
             background-color: rgb(82, 232, 182);
@@ -29,7 +35,8 @@
             margin: 5%; 
             position: relative; 
             box-shadow: 5px 5px 10px #202020;
-            transition: width 2s height 2s; 
+            transition: width 2s height 2s;
+            font-family: 'Gochi Hand', cursive;  
         }
         h2 {
            text-align: center; 
@@ -40,16 +47,22 @@
         width:100%;
         height: 100%;
   }
+  
 }
 @media only screen and (max-width: 768px) {
   #sticky1, #sticky2 {
-    width: 25%;
+    width: 50%;
     height: fit-content;
+}
+.nav-item {
+    float: left; 
+    border-right: 1px solid rgb(198, 197, 197);
+    font-size: 10px;
 }
 }
 @media only screen and (min-width: 768px) {
     body {
-        background-color: bisque;
+        background-color: rgb(237, 180, 111);
     }
 }
 
@@ -79,6 +92,7 @@
     display: block;
     text-decoration: none;
     padding: 14px 16px;
+    font-family: 'Oxygen', sans-serif;
 }
 .nav-item a:hover:not(.active) {
     background-color: aliceblue;
