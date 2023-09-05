@@ -95,4 +95,21 @@ ul li.checked::before {
 .active {
     background-color: aquamarine;
 }
+@media screen and (max-width: 500px) {
+    .addbutton {
+        display: block
+    }
+    #input {
+        margin-bottom: 0;
+        height: 40px;
+        width: 150px; 
+    }
+    #top-container {
+        padding: 5px;
+    }
+    #clickme {
+        width: 100px; 
+        height: 40px; 
+    }
+}
 
