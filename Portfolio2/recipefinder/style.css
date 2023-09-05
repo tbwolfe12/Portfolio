@@ -135,6 +135,10 @@ overflow-x: hidden;
 #show-recipe {
     margin-top: 10px;
  }
+ .nav-item {
+  float: left;
+  font-size: x-small;
+}
 }
 #nav {
     list-style-type: none;
