@@ -1,9 +1,9 @@
 let result = document.getElementById("result");
-let searchbtn = document.getElementById("searchbtn");
+let searchBtn = document.getElementById("search-btn");
 let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
-searchbtn.addEventListener("click", () => {
-  let userInp = document.getElementById("userinput").value;
+searchBtn.addEventListener("click", () => {
+  let userInp = document.getElementById("user-inp").value;
   if (userInp.length == 0) {
     result.innerHTML = `<h3>Input field cannot be empty</h3>`;
   } else {
@@ -30,6 +30,8 @@ searchbtn.addEventListener("click", () => {
         }
         console.log(ingredients);
 
+       
+
         result.innerHTML = `
         <img src = ${myMeal.strMealThumb}>
         <div class= 'details'>
@@ -43,13 +45,14 @@ searchbtn.addEventListener("click", () => {
            </div>
            <button id='show-recipe'>View your recipe!</button>
            `;
-
+           
         let ingredientCon = document.getElementById("ingredient-container");
-        let parent = document.createElement("ul");
-        element.className = "ul-items";
+        let parent = document.createElement("ul-items");
         let recipe = document.getElementById("recipe");
         let hideRecipe = document.getElementById("hide-recipe");
         let showRecipe = document.getElementById("show-recipe");
+
+        
 
         ingredients.forEach((i) => {
           let child = document.createElement("li");
