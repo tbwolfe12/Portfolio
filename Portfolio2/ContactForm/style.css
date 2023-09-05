@@ -4,6 +4,7 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
     background-image: linear-gradient(to bottom right, rgb(44, 180, 188), rgb(255, 255, 255));
+    margin: 0;
 }
 #l-container {
     width:40%; 
@@ -40,6 +41,7 @@ h1 {
     padding-top: 2%;
     padding-left: 10%;
     color: #FFF;
+    margin-top: 40px;
 
 }
 #button {
@@ -90,6 +92,9 @@ textarea {
       float: none;
       width: 100%;
     }
+    body {
+        margin: 0;
+    }
   }
   @media (max-width: 800px) { 
     #square-container {
@@ -109,5 +114,8 @@ textarea {
     .nav-item {
         float: left;
         font-size: x-small;
+    }
+    body {
+        margin: 0;
     }
   }

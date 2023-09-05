@@ -139,6 +139,12 @@ overflow-x: hidden;
   float: left;
   font-size: x-small;
 }
+body {
+margin: 0;
+}
+h1 {
+  margin-top: 40px;
+}
 }
 #nav {
     list-style-type: none;
