@@ -78,7 +78,8 @@ z-index: 4;
     text-align: center;
 }
 button {
-    background-color: rgb(251, 252, 252);
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,220,0.4822522759103641) 50%);
     border: 1px solid rgb(221, 219, 219);
     border-radius: 5px; 
     color:rgb(89, 88, 88);
