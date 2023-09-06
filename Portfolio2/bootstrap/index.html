@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul id="nav">
+            <li class="nav-item"><a href="/Portfolio2/TWolfeInfo/About/about.html">About Me</a></li>
+            <li class="nav-item"><a href="/Portfolio2/TWolfeInfo/MyWork/portfolio.html">My Work</a></li>
+            <li class="nav-item"><a href="/Portfolio2/TWolfeInfo/ContactMe/contactme.html">Contact Me</a></li>
+            <li class="nav-item" style="float: right"><a class="active" href ="/index-1.html">Home</a></li>
+        </ul>
+    </nav> 
+   <h1 class="text-center">Online Checkout</h1>
+    <section id="checkout">
+    <div class="container-fluid">
+                <div class="row">
+                <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                <form class= "form" name= "form" action="#" method="post">
+            <div class="well">
+        <label class="fname" for="fname">First Name: </label>
+        <input type="text" class="form-control" id="fname" name= "first-name" required>
+        <label class="lname" for="lname">Last Name: </label>
+        <input type="text" class="form-control" id="lname" name= "last-name" required>
+        <p class="materials">Are you interested in receiving our free newsletter?</p>
+        <div class="form-check">
+        <label class="form-check-label" for="exampleRadio1">
+            Yes
+        </label>
+        <input class="form-check-input" type="radio" name="radioexample" id="exampleRadio1" value="Yes">
+    </div>
+    <div class="form-check">
+        <label class="form-check-label" for="exampleRadio2">
+            No
+        </label>
+        <input class="form-check-input" type="radio" name="radioexample" id="exampleRadio2" value="No">
+    </div>
+    <div class="text-center">
+    <button type="button" class="btn btn-primary">Get Started</button>
+    <button type="button" class="btn btn-info">Get Help</button>
+    <button type="button" class="btn btn-secondary">Cancel</button>
+</div>
+    </div>
+</form>
+    </div>
+</div>
+    </div>
+</section>
+</body>
+</html>

@@ -4,6 +4,7 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
     background-image: linear-gradient(to bottom right, rgb(44, 180, 188), rgb(255, 255, 255));
+    margin: 0;
 }
 #l-container {
     width:40%; 
@@ -40,6 +41,7 @@ h1 {
     padding-top: 2%;
     padding-left: 10%;
     color: #FFF;
+    margin-top: 40px;
 
 }
 #button {
@@ -85,3 +87,35 @@ textarea {
 .active {
     background-color: aquamarine;
 }
+@media (max-width: 800px) {
+    #l-container, #square-container {
+      float: none;
+      width: 100%;
+    }
+    body {
+        margin: 0;
+    }
+  }
+  @media (max-width: 800px) { 
+    #square-container {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px; 
+    }
+    #button {
+        margin-bottom: 10px;
+        height: 40px;
+        width: 70px;  
+    }
+    h1 {
+        padding-top: 10%;
+    }
+    .nav-item {
+        float: left;
+        font-size: x-small;
+    }
+    body {
+        margin: 0;
+    }
+  }

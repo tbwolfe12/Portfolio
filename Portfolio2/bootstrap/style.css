@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(9,99,106);
+    background: linear-gradient(90deg, rgba(9,99,106,1) 0%, rgba(9,121,97,1) 35%);
+    overflow-x: hidden;
+}
+h1 {
+    color: rgb(4, 53, 43);
+    margin-bottom: 20px;
+}
+#nav {
+    list-style-type: none;
+    background-color: rgb(225, 224, 224);
+    height: 45px;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 6;
+}
+.nav-item {
+    float: left; 
+    border-right: 1px solid rgb(198, 197, 197);
+}
+.nav-item a {
+    color: rgb(89, 88, 88);
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.nav-item a:hover:not(.active) {
+    background-color: aliceblue;
+}
+.active {
+    background-color: aquamarine;
+}
+@media screen and (min-width: 600px) {
+.container-fluid {
+    margin-left: 425px;
+    width: 1200px 
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container-fluid {
+    margin-left: 100px;
+    width: 600px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-fluid {
+        margin-left: 100px;
+        width: 600px 
+    } 
+}
+p {
+    margin-top: 2%; 
+}

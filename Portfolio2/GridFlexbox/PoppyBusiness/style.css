@@ -2,9 +2,14 @@
     background-color: #feffdf;
     font-family: 'Oxygen', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+   
+    
 }
 html {
-    height: 100%;              
+    height: 100%;  
+    overflow-x: hidden;            
 }
 body {
     text-align: center;
@@ -16,7 +21,6 @@ body {
 .topnav {
     display: flex;
     overflow: hidden;    
-
 }
 .topnav a {
     display: flex; 
@@ -28,15 +32,19 @@ body {
     justify-content: space-around;
 }
 h1 {
-    color: rgb(110, 109, 109);
+    color: rgb(242, 132, 132);
+    text-shadow: 2px 2px 8px #FFF;
     font-size: 4em;
     background-color: transparent;
+    margin-bottom: 5%;
 }
 #p1 {
     margin-top: -5%;
     font-size: 3em;
     background-color: transparent;
-    color: rgb(194, 191, 191);
+    color: rgb(209, 115, 115);
+    text-shadow: 2px 2px 8px #FFF;
+    margin-bottom: 5%;
 }
 header {
     background-color: pink;
@@ -47,13 +55,15 @@ header {
 }
 #main-box {
     height:50vh;
-    background-color: #ffa952;
     display: flex;
     justify-content:space-around;
+    
 }
 img {
     margin: 5% 0 5% 0;
     border-radius: 10%;
+    width: 100vw;
+    background-repeat: no-repeat;
 }
 #container {
     width: 80vw; 
@@ -63,7 +73,7 @@ img {
     margin: 0 auto;  
 
 }
-#div1, #div2, #div3 {
+.div-item {
     background-color: #ef5a5a;
     padding: 10px; 
 }
@@ -111,15 +121,35 @@ footer p {
     background-color: transparent;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
-    #h1-box, #p1 {background-image: url(poppies.jpg)};
+@media only screen and (max-width: 600px) {
+    #h1-box, #p1 {
+        background-image: url(poppies.jpg);
+    }
+    .drop-down {
+        float: left;
+        font-size: x-small;
+    }
+    .dropdown-content {
+        width: 100%;
+    }
 }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (max-width: 600px) {
     #h1-box {background-color: #ffa952;
         }
+        .main-column {
+            display: block;
+            float: left;
+            width: 100%;
+        }
+        footer p {
+            background-color: transparent;
+            display: inline-flex;
+            float: right;
+            font-size: 12px;
   } 
+}
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
