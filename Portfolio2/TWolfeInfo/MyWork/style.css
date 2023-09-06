@@ -28,12 +28,12 @@ h1 {
 }
 #info-container {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;   
+    grid-template-columns: 25% 25% 25% 25%;   
     text-align: center; 
     background-color: rgb(102, 174, 150);
     width: 75%;
     margin: 0 auto;
-    height: 200px; 
+    height:300px; 
     border-radius: 20px;
 } 
 #info-container div  {
@@ -90,12 +90,20 @@ footer {
 }
 @media screen and (min-width:250px) and (max-width:480px) {
     #info-container{
+        display: grid; 
       grid-template-columns: repeat(1,1fr);
-      height: 50%;
-      margin-bottom: 10px;
+      height: 75vh;
+      justify-content: space-around;
+      align-content: space-between;
+      
+    }
+    .grid-item {
+        height: 80px;
+        font-size: 5px;
     }
     h1 {
-        font-size: 25px;
+        margin-top: 20px;
+        font-size: 21px;
     }
     .nav-item {
         float: left; 
